@@ -1,0 +1,7 @@
+# Block all search engines from crawling the entire site
+User-agent: *
+Disallow: /
+
+# Optional: allow Googlebot for images only (if you want)
+# User-agent: Googlebot-Image
+# Allow: /images/
