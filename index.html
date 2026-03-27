@@ -47,70 +47,105 @@
     <p>
         At <strong>HD Balloon Decors</strong>, we specialize in stylish and creative balloon decorations designed to add charm and excitement to every occasion.
     </p>
-
     <p>
         From birthdays and weddings to baby showers, anniversaries, and corporate events, we bring your ideas to life with unique and eye-catching designs.
     </p>
-
     <p>
         Our goal is simple — to make your special moments stress-free and unforgettable. We carefully design each setup to match your theme and vision.
     </p>
-
     <p>
         With creativity and attention to detail, we ensure every decoration leaves a lasting impression on you and your guests.
     </p>
-
     <p class="highlight">
         Celebrate with us, and let your moments shine!
     </p>
-
 </section>
-
 <!-- GALLERY -->
 <section id="gallery" class="gallery">
     <h2>Our Work</h2>
-
     <div class="grid">
-        <img src="images/img1.jpeg" class="img-size">
-        <img src="images/img2.jpeg" class="img-size">
-        <img src="images/img3.jpeg" class="img-size">
-        <img src="images/img4.jpeg" class="img-size">
+        <img src="images/img1.jpeg" class="img-size" onclick="openModal(this)">
+        <img src="images/img2.jpeg" class="img-size" onclick="openModal(this)">
+        <img src="images/img3.jpeg" class="img-size" onclick="openModal(this)">
+        <img src="images/img4.jpeg" class="img-size" onclick="openModal(this)">
     </div>
     <div class="grid">
-        <img src="images/img5.jpeg" class="img-size">
-        <img src="images/img6.jpeg" class="img-size">
-        <img src="images/img7.jpeg" class="img-size">
-        <img src="images/img8.jpeg" class="img-size">
+        <img src="images/img5.jpeg" class="img-size" onclick="openModal(this)">
+        <img src="images/img6.jpeg" class="img-size" onclick="openModal(this)">
+        <img src="images/img7.jpeg" class="img-size" onclick="openModal(this)">
+        <img src="images/img8.jpeg" class="img-size" onclick="openModal(this)">
     </div>
 </section>
+<!-- Modal -->
+<div id="imgModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
 <!-- CONTACT -->
 <section id="contact" class="contact">
     <div class="address">
-         <h2>Address</h2>
+         <h2><img src="imageS/store.png" width="25px" height="25px" alt="homeicon"> Address</h2>
         <div class="card-box">
             <p>Thugundram, G.D. Nellore Mandal</p>
             <p>Chittoor Dist (AP) - 517421.</p>
         </div>
         <div class="card-box">
-            <p>Contact Us:XXXXXXXXXXX</p>
-            <p>Email ID:example@gmail.com</p>
+            <img src="images/phone.png" width="25px" height="25px" alt="google-map">
+            <p>9440940110</p>
+            <img src="images/gmail.png" width="25px" height="25px" alt="google-mP">
+            <p>hdballoon25@gmail.com</p>
         </div>
     </div>
     <div class="contactDetail">
+  <h2><img src="images/google-maps.png" width="25px" height="25px" alt="google-map">Location </h2>
+
+  <iframe
+    src="https://www.google.com/maps?q=13.1907706,79.2674643&output=embed"
+    width="450px"
+    height="300"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+
+</div>
+    <div class="contactDetail">
           <h2>Contact Us</h2>
         <form>
+        <div class="contact-form">
         <input type="text" placeholder="Your Name"><br>
         <input type="email" placeholder="Your Email"><br>
         <textarea placeholder="Your Message"></textarea><br>
         <button type="submit">Send Message</button>
+        </div>
     </form>
     </div>
 </section>
+<hr>
+<div style="text-align: center";>
+    <p style="font-size:16px">Social Media</p>
+    <img src="images/instagram.png" width="25px" height="25px" alt="google-map">
+    <img src="images/social-media.png" width="25px" height="25px" alt="google-map">
+    <img src="images/facebook.png" width="25px" height="25px" alt="google-map">
+    <img src="images/youtube.png" width="25px" height="25px" alt="google-map">
+
+</div>
+
 
 <!-- FOOTER -->
 <footer>
 © 2026 UK creations | All Rights Reserved
 </footer>
-<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank"></a>
+<a href="https://wa.me/919440940110" class="whatsapp-float" target="_blank"></a>
 </body>
+<script>
+function openModal(img) {
+    document.getElementById("imgModal").style.display = "block";
+    document.getElementById("modalImg").src = img.src;
+}
+
+function closeModal() {
+    document.getElementById("imgModal").style.display = "none";
+}
+</script>
 </html>
